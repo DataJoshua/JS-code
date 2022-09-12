@@ -1,0 +1,135 @@
+* {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgba(208, 237, 255, 0.766);
+}
+
+.container {
+  max-width: 50%;
+  margin: auto;
+}
+
+.container .title {
+  margin: 80px 0px 40px 0px;
+}
+
+.container .title h1 {
+  text-align: center;
+}
+
+.container .title .line {
+  width: 100px;
+  height: 5px;
+  background-color: #5ba2be;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.container .review-container {
+  background-color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 10px 0px #6a6a6a;
+          box-shadow: 0px 0px 10px 0px #6a6a6a;
+  margin-bottom: 100px;
+}
+
+.container .review-container .review-item .img .img-container {
+  margin: 0px 70px;
+  position: relative;
+}
+
+.container .review-container .review-item .img .img-container::before {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-42%, -54%);
+          transform: translate(-42%, -54%);
+  border-radius: 100%;
+  z-index: 0;
+  width: 130px;
+  height: 130px;
+  background-color: #54c0eb;
+}
+
+.container .review-container .review-item .img .img-container img {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  z-index: 1000;
+}
+
+.container .review-container .review-item .img h3, .container .review-container .review-item .img h4 {
+  margin: 15px 0px;
+}
+
+.container .review-container .review-item .review-description {
+  margin: 15px 0px;
+}
+
+.container .review-container .review-item .navigate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.container .review-container .review-item .navigate .navigate-btn {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+}
+
+.container .review-container .review-item .navigate .navigate-btn:hover {
+  background-color: #5f5f5f;
+  cursor: pointer;
+}
+
+.container .review-container .review-item .navigate #navigate-1 {
+  -webkit-clip-path: polygon(0% 50%, 100% 100%, 100% 0);
+          clip-path: polygon(0% 50%, 100% 100%, 100% 0);
+}
+
+.container .review-container .review-item .navigate #navigate-2 {
+  -webkit-clip-path: polygon(0 100%, 100% 50%, 0 0);
+          clip-path: polygon(0 100%, 100% 50%, 0 0);
+}
+
+.container .review-container .review-item .navigate #btn {
+  padding: 0px 10px;
+  border: none;
+  color: #fff;
+  background-color: #1a7193;
+}
+
+.container .review-container .review-item .navigate #btn:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 70%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

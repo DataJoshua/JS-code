@@ -1,0 +1,132 @@
+*{
+    font-family:'Merriweather', serif;
+    margin: 0;
+    padding: 0
+}
+
+body{
+    background: rgba(208, 237, 255, 0.766);
+}
+
+
+.container{
+    max-width: 50%;
+    margin: auto;
+    
+    .title{
+
+        margin: 80px 0px 40px 0px;
+        h1{
+            text-align: center;
+        }
+        .line{
+            width: 100px;
+            height: 5px;
+            background-color: rgb(91, 162, 190);
+            margin-left: 50% ;
+            transform: translateX(-50%);
+
+        }
+    }
+
+    
+    .review-container{
+
+        background-color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px 0px rgb(106, 106, 106);
+        margin-bottom: 100px;
+        .review-item{
+            .img{
+                .img-container{
+                    margin: 0px 70px;
+                    position: relative;
+                    &::before{
+                        content: ' ';
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-42%, -54%);
+                        border-radius: 100%;
+                        z-index: 0;
+                         
+                        width: 130px;
+                        height: 130px;
+                        
+                        background-color: rgb(84, 192, 235);
+                      
+                    }
+                    
+                    img{
+                      
+                        width: 130px;
+                        height: 130px;
+                        border-radius: 100%;
+                        object-fit: cover;
+                        position: relative;
+                        z-index:1000;
+                       
+                    }
+                }
+
+                h3, h4{
+                    margin: 15px 0px;
+                }
+
+            }
+
+            .review-description{
+                margin: 15px 0px;
+            }
+
+            .navigate{
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                .navigate-btn{
+                    width: 20px;
+                    height: 20px;
+                    background-color: #ccc;
+                    &:hover{
+                        background-color: rgb(95, 95, 95);
+                        cursor: pointer;
+                    }
+                }
+
+                #navigate-1{
+                    clip-path: polygon(0% 50%, 100% 100%, 100% 0);
+                }
+                #navigate-2{
+                    clip-path: polygon(0 100%, 100% 50%, 0 0);
+                }
+                #btn{
+                    padding: 0px 10px;
+                    border: none;
+                    color: #fff;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    background-color: rgb(26, 113, 147);               }
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 900px){
+    .container{
+        max-width: 70%;
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 480px){
+    .container{
+        max-width: 90%;
+        margin: auto;
+    }
+}
